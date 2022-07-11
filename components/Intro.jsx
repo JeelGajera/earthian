@@ -34,7 +34,7 @@ function Intro() {
             tick();
         }, period)
         return () => { clearInterval(ticker) };
-    }, [text]);
+    }, [text, period]);
 
     return (
         <>
