@@ -8,6 +8,7 @@ module.exports = {
     extend: {
       animation: {
         ping: 'ping 4s cubic-bezier(0, 0, 0.4, 1) infinite',
+        bounce: 'bounce 2.5s infinite;'
       },
       screens: {
         'xsm': '320px',

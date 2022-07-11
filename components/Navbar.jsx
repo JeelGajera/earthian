@@ -23,7 +23,7 @@ function Navbar() {
     const TinyNavLink = ({ children, to }) => {
         return (
             <Link href={to} passHref>
-                <li className={`p-2 mx-3 text-xl shadow-lg bg-teal-400 ${router.pathname == to ? 'bg-red-500 text-teal-400' : ''} bg-opacity-10 hover:bg-red-500 hover:bg-opacity-10 backdrop-blur-md rounded-full duration-500 cursor-pointer`}>
+                <li className={`p-2 mx-3 text-xl shadow-lg bg-opacity-10 hover:bg-teal-500 hover:bg-opacity-10 ${router.pathname == to ? 'text-teal-400 bg-red-500' : ''} backdrop-blur-md rounded-full duration-500 cursor-pointer`}>
                     {children}
                 </li>
             </Link>
