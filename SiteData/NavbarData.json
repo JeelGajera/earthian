@@ -1,0 +1,21 @@
+{
+    "navbarData": [
+        {
+            "name": "Home",
+            "to": "/"
+        },
+        {
+            "name": "About",
+            "to": "/about"
+            
+        },
+        {
+            "name": "Portfolio",
+            "to": "/portfolio"
+        },
+        {
+            "name": "Contact",
+            "to": "/contact"
+        }
+    ]
+}
