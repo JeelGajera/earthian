@@ -39,11 +39,12 @@ function Intro() {
     return (
         <>
             <div className=" flex items-center justify-center ">
-                <div className="m-2 flex justify-between w-2/4 rounded-lg bg-white bg-opacity-10 p-6 backdrop-blur-md lg:p-8">
-                    <div>
-                        <div className="text-lg">Hey there 👋</div>
-                        <div className="xsm:text-5xl mb-2 text-clip bg-transparent text-7xl text-teal-400">Jeel Gajera</div>
-                        <div className="text-lg">
+                <div className="m-2 p-7 flex-col sm:flex-row md:flex lg:flex justify-center gap-4 min-w-fit max-h-max min-h-auto rounded-lg bg-white bg-opacity-10 backdrop-blur-md lg:p-8">
+                    <Image className="rounded-full lg:p-0" width="160" height="160" src="https://res.cloudinary.com/www-lakshyafestldce-com/image/upload/v1657554374/MyPorfolio_JG/myself_uf7i4o.webp" alt="Profile_Image" />
+                    <div className="h-[140px]">
+                        <div className="text-lg mx-1">Hey there 👋</div>
+                        <div className="xsm:text-5xl mx-1 mb-2 text-clip bg-transparent text-7xl text-teal-400">Jeel Gajera</div>
+                        <div className="absolute text-lg">
                             I'm a passionate&nbsp;
                             <span className="font-mono text-xl underline underline-offset-4 text-teal-200">
                                 {text}
@@ -51,7 +52,6 @@ function Intro() {
                             <br />from India.
                         </div>
                     </div>
-                    <Image className="rounded-full shadow-7xl lg:p-0" width="160" height="160" src="https://res.cloudinary.com/www-lakshyafestldce-com/image/upload/v1650570768/Team/Jeel_Gajera_mwzqpg.webp" alt="Profile_Image" />
                 </div>
             </div>
         </>

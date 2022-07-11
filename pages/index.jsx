@@ -7,7 +7,7 @@ export default function Home() {
     <>
       <Layout title="Jeel Gajera | Home 🧑‍💻">
         <div>
-          {/* <Intro /> */}
+          <Intro />
         </div>
       </Layout>
     </>
