@@ -13,7 +13,7 @@ function Navbar() {
     function NavLink({ name, to }) {
         return (
             <Link href={to} passHref>
-                <li className={`mx-3 p-2 md:my-0 hover:bg-teal-400 hover:bg-opacity-10 ${router.pathname == to ? 'bg-red-500 text-teal-400 underline underline-offset-4' : ''} bg-opacity-10 backdrop-blur-md rounded-3xl duration-500 cursor-pointer`}>
+                <li className={`mx-3 p-2 md:my-0 hover:bg-red-500 hover:bg-opacity-10 hover:text-teal-400 ${router.pathname == to ? 'bg-teal-400 text-red-400 underline underline-offset-4' : ''} bg-opacity-10 backdrop-blur-md rounded-3xl duration-500 cursor-pointer`}>
                     {name}
                 </li>
             </Link>
@@ -23,7 +23,7 @@ function Navbar() {
     const TinyNavLink = ({ children, to }) => {
         return (
             <Link href={to} passHref>
-                <li className={`p-2 mx-3 text-xl shadow-lg bg-opacity-10 hover:bg-teal-500 hover:bg-opacity-10 ${router.pathname == to ? 'text-teal-400 bg-red-500' : ''} backdrop-blur-md rounded-full duration-500 cursor-pointer`}>
+                <li className={`p-2 mx-3 text-xl shadow-lg bg-opacity-10 hover:bg-red-500 hover:bg-opacity-10 hover:text-teal-400 ${router.pathname == to ? 'text-red-500 bg-teal-400' : ''} backdrop-blur-md rounded-full duration-500 cursor-pointer`}>
                     {children}
                 </li>
             </Link>
@@ -40,7 +40,7 @@ function Navbar() {
                     ))}
                 </ul>
                 {/* tiny navbar */}
-                <div className="fixed flex sm:hidden items-center justify-center z-10 bottom-3">
+                <div className="fixed flex sm:hidden items-center justify-center z-10 bottom-4">
                     <ul className="flex items-center justify-center sm:flex p-3 rounded-3xl text-lg bg-opacity-40 backdrop-blur-lg bg-black max-w-fit">
                         <TinyNavLink to={"/"}><ImHome /></TinyNavLink>
                         <TinyNavLink to={"/about"}><BsFillInfoCircleFill /></TinyNavLink>
