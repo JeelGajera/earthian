@@ -4,6 +4,7 @@ import Image from 'next/image';
 import imgPath from '../public/em404.svg';
 import { VscDebugStepBack } from 'react-icons/vsc';
 import { LinkButton } from '../components/utils/Button';
+import { FadeOut } from '../components/utils/FramMotion';
 
 function NotFound() {
     return (
@@ -15,7 +16,7 @@ function NotFound() {
                             <Image src={imgPath} alt="404" width={200} height={200} />
                         </div>
                         <div className=" tracking-widest">
-                            <span className="text-gray-500 mb-2 text-6xl block"><span>4  0  4</span></span>
+                            <FadeOut><span className="text-gray-500 mb-2 text-6xl block"><span>4  0  4</span></span></FadeOut>
                             <hr className="w-24 h-[2px] rounded-lg m-2 border-none bg-teal-500" />
                             <span className="text-gray-500 text-xl">Sorry, We couldn't find what you are looking for!</span>
                         </div>
@@ -23,7 +24,7 @@ function NotFound() {
                             <LinkButton type="dynamic" 
                                 onClick={() => window.history.back()}>
                                 Go back
-                                <span className="mx-1 px-1 text-red-500 animate-spinR"><VscDebugStepBack /></span>
+                                <span className="mx-1 px-1 text-red-500 animate-pulse"><VscDebugStepBack /></span>
                             </LinkButton>
                         </div>
                     </center>
