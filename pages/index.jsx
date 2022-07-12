@@ -14,7 +14,7 @@ export default function Home() {
   const SocialBtn = ({ children, to }) => {
     return (
       <IconFadeOutHover>
-        <a target="_blank" href={to} className="p-2 bg-white bg-opacity-10 hover:bg-teal-400 hover:bg-opacity-10 hover:text-red-500 backdrop-blur-md rounded-full flex items-center justify-center cursor-pointer hover:animate-pulse ">
+        <a target="_blank" rel="noopener noreferrer" href={to} className="p-2 bg-white bg-opacity-10 hover:bg-teal-400 hover:bg-opacity-10 hover:text-red-500 backdrop-blur-md rounded-full flex items-center justify-center cursor-pointer hover:animate-pulse ">
           {children}
         </a>
       </IconFadeOutHover>
