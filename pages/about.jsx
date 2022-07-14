@@ -11,29 +11,15 @@ import { useInView } from "react-intersection-observer";
 
 function about() {
 
-  const secLeftToRight = {
+  const secPopOut = {
     hidden: {
-      x: '-100vw',
-      opacity: 0
+      opacity: 0, scale: 0.8
     },
     visible: {
-      x: 0,
+      scale: 1,
       opacity: 1,
       transition: {
-        delay: 0.5, type: 'spring', duration: 1
-      }
-    }
-  };
-  const secRightToLeft = {
-    hidden: {
-      x: '100vw',
-      opacity: 0
-    },
-    visible: {
-      x: 0,
-      opacity: 1,
-      transition: {
-        delay: 0.5, type: 'spring', duration: 1
+        delay: 0.3, type: 'spring', stiffness: 400
       }
     }
   };
@@ -77,7 +63,7 @@ function about() {
       <div ref={ref} className="m-5">
         <SectionTitle title="Me, MySelf & I"><CgUserlane /></SectionTitle>
         <motion.div
-          initial={"hidden"} animate={control} variants={secLeftToRight}
+          initial={"hidden"} animate={control} variants={secPopOut}
           className="ml-4 p-2 bg-black bg-opacity-20 backdrop-blur-md rounded">
           <h3 className="text-[#f8b34b]">Hello! I'm Jeel</h3>
           <ul className="ml-4 text-md list-disc marker:text-[#f8b34b]">
@@ -105,7 +91,7 @@ function about() {
       <div ref={ref2} className="m-5">
         <SectionTitle title="Education"><IoMdSchool /></SectionTitle>
         <motion.div
-          initial={"hidden"} animate={control2} variants={secRightToLeft}
+          initial={"hidden"} animate={control2} variants={secPopOut}
           className="ml-4 p-2 bg-black bg-opacity-20 backdrop-blur-md rounded">
           <ul className="ml-4 text-md list-disc marker:text-[#f8b34b]">
             <li className="list-none p-1">
@@ -150,7 +136,7 @@ function about() {
       <div ref={ref3} className="m-5">
         <SectionTitle title="Experience"><FaUserTie /></SectionTitle>
         <motion.div
-          initial={"hidden"} animate={control3} variants={secLeftToRight}
+          initial={"hidden"} animate={control3} variants={secPopOut}
           className="ml-4 p-2 bg-black bg-opacity-20 backdrop-blur-md rounded">
           <ul className="ml-4 text-md list-disc marker:text-[#f8b34b]">
             <li>
@@ -180,7 +166,7 @@ function about() {
       <div ref={ref4} className="m-5">
         <SectionTitle title="Skills"><MdEngineering /></SectionTitle>
         <motion.div
-          initial={"hidden"} animate={control4} variants={secRightToLeft}
+          initial={"hidden"} animate={control4} variants={secPopOut}
           className="ml-4 p-2 bg-black bg-opacity-20 backdrop-blur-md rounded">
           <ul className="ml-4 text-md list-none">
             <li>
