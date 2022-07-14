@@ -19,8 +19,8 @@ function Footer() {
         )
     }
     return (
-        <footer className="bg-transparent sticky top-0 bottom-4 mt-12 flex justify-center z-40">
-            <div className="flex sm:hidden items-center justify-center">
+        <footer className="mt-12 flex sm:hidden items-center justify-center z-40">
+            <div className="bg-transparent fixed bottom-4">
                 <ul className="flex items-center justify-center sm:flex p-3 rounded-3xl text-lg bg-opacity-40 backdrop-blur-lg bg-black max-w-fit">
                     <FooterLink to={"/"}><ImHome /></FooterLink>
                     <FooterLink to={"/about"}><BsFillInfoCircleFill /></FooterLink>
