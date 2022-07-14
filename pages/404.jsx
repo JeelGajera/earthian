@@ -4,7 +4,7 @@ import Image from 'next/image';
 import imgPath from '../public/em404.svg';
 import { VscDebugStepBack } from 'react-icons/vsc';
 import { LinkButton } from '../components/utils/Button';
-import { FadeOut } from '../components/utils/FramMotion';
+import { FadeOut } from '../components/utils/FrameMotion';
 
 function NotFound() {
     return (

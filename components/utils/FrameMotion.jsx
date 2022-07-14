@@ -1,10 +1,9 @@
 import React from "react";
 import { motion } from "framer-motion";
 
-export const RighToLeft = ({ children }, ...props) => {
+export const RighToLeft = ({ children }) => {
     return (
         <motion.div
-            {...props}
             initial={{ x: "100vw" }}
             animate={{ x: 0 }}
             transition={{ delay: 0.5, type: "spring" }}
@@ -13,11 +12,11 @@ export const RighToLeft = ({ children }, ...props) => {
         </motion.div>
     );
 };
+RighToLeft.displayName = "RighToLeft";
 
-export const LeftToRight = ({ children }, ...props) => {
+export const LeftToRight = ({ children }) => {
     return (
         <motion.div
-            {...props}
             initial={{ x: "-100vw" }}
             animate={{ x: 0 }}
             transition={{ delay: 0.5, type: "spring" }}
@@ -26,11 +25,11 @@ export const LeftToRight = ({ children }, ...props) => {
         </motion.div>
     );
 };
+LeftToRight.displayName = "LeftToRight";
 
-export const UpToDown = ({ children }, ...props) => {
+export const UpToDown = ({ children }) => {
     return (
         <motion.div
-            {...props}
             initial={{ y: "-50vh", opacity: 0.3 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{ delay: 0.2, type: "spring" }}
@@ -39,11 +38,11 @@ export const UpToDown = ({ children }, ...props) => {
         </motion.div>
     );
 };
+UpToDown.displayName = "UpToDown";
 
-export const DownToUp = ({ children }, ...props) => {
+export const DownToUp = ({ children }) => {
     return (
         <motion.div
-            {...props}
             initial={{ y: "50vh", opacity: 0.3 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{ delay: 0.2, type: "spring" }}
@@ -52,11 +51,11 @@ export const DownToUp = ({ children }, ...props) => {
         </motion.div>
     );
 };
+DownToUp.displayName = "DownToUp";
 
-export const IconFadeOutHover = ({ children }, ...props) => {
+export const IconFadeOutHover = ({ children }) => {
     return (
         <motion.div
-            {...props}
             whileHover={{ scale: 1.2, origin: 0 }}
             transition={{ type: 'spring', stiffness: 400 }}
         >
@@ -64,11 +63,11 @@ export const IconFadeOutHover = ({ children }, ...props) => {
         </motion.div>
     );
 };
+IconFadeOutHover.displayName = "IconFadeOutHover";
 
-export const ImgFadeOut = ({ children }, ...props) => {
+export const ImgFadeOut = ({ children }) => {
     return (
         <motion.div
-            {...props}
             initial={{ opacity: 0, scale: 0.5 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ delay: 0.4, type: "spring", stiffness: 400 }}
@@ -77,11 +76,11 @@ export const ImgFadeOut = ({ children }, ...props) => {
         </motion.div>
     );
 };
+ImgFadeOut.displayName = "ImgFadeOut";
 
-export const FadeOut = ({ children }, ...props) => {
+export const FadeOut = ({ children }) => {
     return (
         <motion.div
-            {...props}
             initial={{ opacity: 0, scale: 0.2 }}
             animate={{ opacity: 1, scale: 1}}
             transition={{ delay: 0.6, type: "spring", stiffness: 400 }}
@@ -90,11 +89,11 @@ export const FadeOut = ({ children }, ...props) => {
         </motion.div>
     );
 };
+FadeOut.displayName = "FadeOut";
 
-export const TextDown = ({ children }, ...props) => {
+export const TextDown = ({ children }) => {
     return (
         <motion.div
-            {...props}
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.6, type: "spring", stiffness: 400 }}
@@ -103,3 +102,4 @@ export const TextDown = ({ children }, ...props) => {
         </motion.div>
     );
 };
+TextDown.displayName = "TextDown";

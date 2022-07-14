@@ -3,7 +3,7 @@ import Layout from '../layout/Layout';
 
 function contact() {
   return (
-    <Layout title="Jeel Gajera | Contact 😊">
+    <Layout section="Contact" title="Jeel Gajera | Contact 😊">
       <div>
         <h1>Contact me</h1>
       </div>

@@ -3,8 +3,9 @@ import Head from 'next/head';
 import Navbar from '../components/Navbar';
 import BgObjects from '../components/BgObjects';
 import Frame from '../components/utils/Frame';
+import Footer from '../components/Footer';
 
-const Layout = ({ children, title, description }) => {
+const Layout = ({ children, title, description, section }) => {
   return (
     <>
       <Head>
@@ -17,8 +18,9 @@ const Layout = ({ children, title, description }) => {
         <meta name={title} content={description} />
       </Head>
       <BgObjects/>
-      <Navbar />
+      <Navbar section={section} />
       <Frame>{children}</Frame>
+      <Footer/>
     </>
   );
 };

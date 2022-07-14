@@ -1,7 +1,7 @@
 import React from 'react';
 import Intro from '../components/Intro.jsx';
 import Layout from '../layout/Layout.jsx';
-import { UpToDown, DownToUp, IconFadeOutHover, FadeOut } from '../components/utils/FramMotion';
+import { UpToDown, DownToUp, IconFadeOutHover, FadeOut } from '../components/utils/FrameMotion';
 import { LinkButton } from '../components/utils/Button';
 import { BsArrowRight } from 'react-icons/bs';
 import { FiGithub } from 'react-icons/fi';
@@ -47,4 +47,4 @@ export default function Home() {
       </Layout>
     </>
   )
-}
+};

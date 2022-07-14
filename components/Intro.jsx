@@ -1,8 +1,7 @@
 import React from 'react';
 import Image from 'next/image'
 import { useEffect, useState } from 'react';
-import { motion } from "framer-motion";
-import { RighToLeft, ImgFadeOut } from '../components/utils/FramMotion';
+import { RighToLeft, ImgFadeOut } from './utils/FrameMotion';
 
 
 function Intro() {

@@ -14,7 +14,7 @@ const config = {
 };
 
 // normal button
-function Button({ type = 'primary', size = 'md', children = 'Button' }, props) {
+function Button({ type , size , children = 'Button' }, props) {
     return (
         <button
             {...props}
