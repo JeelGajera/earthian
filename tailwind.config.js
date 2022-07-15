@@ -19,6 +19,8 @@ module.exports = {
         },
       },
       animation: {
+        pulseSlow: 'pulse 5s infinite',
+        spinSlow : 'spin 3s linear infinite',
         pingSlow: 'ping 4s cubic-bezier(0, 0, 0.4, 1) infinite',
         bounce: 'bounce 2.5s infinite',
         'waving-hand': 'wave 2s linear infinite',

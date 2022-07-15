@@ -82,7 +82,7 @@ export const FadeOut = ({ children }) => {
     return (
         <motion.div
             initial={{ opacity: 0, scale: 0.2 }}
-            animate={{ opacity: 1, scale: 1}}
+            animate={{ opacity: 1, scale: 1 }}
             transition={{ delay: 0.6, type: "spring", stiffness: 400 }}
         >
             {children}

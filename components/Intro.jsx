@@ -39,8 +39,8 @@ function Intro() {
 
     return (
         <>
-            <div className=" flex items-center justify-center ">
-                <div className="m-2 p-7 flex-col sm:flex-row md:flex lg:flex justify-center gap-4 min-w-fit max-h-max min-h-auto rounded-lg bg-white bg-opacity-10 backdrop-blur-md lg:p-8">
+            <div className="flex items-center justify-center ">
+                <div className="m-2 p-7 shadow-2xl flex-col sm:flex-row md:flex lg:flex justify-center gap-4 min-w-fit max-h-max min-h-auto rounded-lg bg-white bg-opacity-10 backdrop-blur-md lg:p-8">
                     <ImgFadeOut>
                         <Image className="rounded-full lg:p-0" width="160" height="160" src="https://res.cloudinary.com/www-lakshyafestldce-com/image/upload/v1657554374/MyPorfolio_JG/myself_uf7i4o.webp" alt="Profile_Image" />
                     </ImgFadeOut>

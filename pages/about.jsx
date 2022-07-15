@@ -49,7 +49,9 @@ function about() {
 
   function MySelf() {
     const control = useAnimation();
-    const [ref, inView] = useInView();
+    const [ref, inView] = useInView({
+      threshold: 0.5,
+    });
 
     useEffect(() => {
       if (inView) {
@@ -64,7 +66,7 @@ function about() {
         <SectionTitle title="Me, MySelf & I"><CgUserlane /></SectionTitle>
         <motion.div
           initial={"hidden"} animate={control} variants={secPopOut}
-          className="ml-4 p-2 bg-black bg-opacity-20 backdrop-blur-md rounded">
+          className="ml-4 p-2 shadow-2xl bg-black bg-opacity-20 backdrop-blur-md rounded">
           <h3 className="text-[#f8b34b]">Hello! I'm Jeel</h3>
           <ul className="ml-4 text-md list-disc marker:text-[#f8b34b]">
             <li>I like to communicate with others because it give me chance to interact with others and also i learn something new with people, so it's help me improve my self.</li>
@@ -77,7 +79,9 @@ function about() {
 
   function Education() {
     const control2 = useAnimation();
-    const [ref2, inView2] = useInView();
+    const [ref2, inView2] = useInView({
+      threshold: 0.5,
+    });
 
     useEffect(() => {
       if (inView2) {
@@ -92,7 +96,7 @@ function about() {
         <SectionTitle title="Education"><IoMdSchool /></SectionTitle>
         <motion.div
           initial={"hidden"} animate={control2} variants={secPopOut}
-          className="ml-4 p-2 bg-black bg-opacity-20 backdrop-blur-md rounded">
+          className="ml-4 p-2 shadow-2xl bg-black bg-opacity-20 backdrop-blur-md rounded">
           <ul className="ml-4 text-md list-disc marker:text-[#f8b34b]">
             <li className="list-none p-1">
               <div className="text-[#f8b34b]">
@@ -122,7 +126,9 @@ function about() {
 
   function Experience() {
     const control3 = useAnimation();
-    const [ref3, inView3] = useInView();
+    const [ref3, inView3] = useInView({
+      threshold: 0.5,
+    });
 
     useEffect(() => {
       if (inView3) {
@@ -137,7 +143,7 @@ function about() {
         <SectionTitle title="Experience"><FaUserTie /></SectionTitle>
         <motion.div
           initial={"hidden"} animate={control3} variants={secPopOut}
-          className="ml-4 p-2 bg-black bg-opacity-20 backdrop-blur-md rounded">
+          className="ml-4 p-2 shadow-2xl bg-black bg-opacity-20 backdrop-blur-md rounded">
           <ul className="ml-4 text-md list-disc marker:text-[#f8b34b]">
             <li>
               I'm a student at L.D. College Of Engineering and pursuing computer engineering course, I have a good knowdlage of this field also I'm good in mathematics & management.
@@ -152,7 +158,9 @@ function about() {
 
   function MySkills() {
     const control4 = useAnimation();
-    const [ref4, inView4] = useInView();
+    const [ref4, inView4] = useInView({
+      threshold: 0.5,
+    });
 
     useEffect(() => {
       if (inView4) {
@@ -167,7 +175,7 @@ function about() {
         <SectionTitle title="Skills"><MdEngineering /></SectionTitle>
         <motion.div
           initial={"hidden"} animate={control4} variants={secPopOut}
-          className="ml-4 p-2 bg-black bg-opacity-20 backdrop-blur-md rounded">
+          className="ml-4 p-2 shadow-2xl bg-black bg-opacity-20 backdrop-blur-md rounded">
           <ul className="ml-4 text-md list-none">
             <li>
               <span className="text-[#f8b34b] mb-2">Programing Languages</span>
