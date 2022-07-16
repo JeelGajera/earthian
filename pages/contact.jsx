@@ -15,7 +15,7 @@ import { motion, useAnimation } from 'framer-motion';
 import { useInView } from "react-intersection-observer";
 
 
-function contact() {
+function Contact() {
 
   const secPopOut = {
     hidden: {
@@ -239,4 +239,4 @@ function contact() {
   )
 }
 
-export default contact;
+export default Contact;

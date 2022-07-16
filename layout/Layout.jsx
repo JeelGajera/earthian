@@ -10,7 +10,7 @@ const Layout = ({ children, title, description, section }) => {
     <>
       <Head>
         <title>{title}</title>
-        <link rel="icon" href="/icon.png" />
+        <link type="image/png" sizes="96x96" rel="icon" href="/icon.png"/>
         <meta charSet='utf-8'/>
         <meta content="width=device-width, initial-scale=1.0" name='viewport' />
         <meta name="theme-color" content="#0F1625"/>

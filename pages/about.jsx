@@ -9,7 +9,7 @@ import { IconFadeOutHover, TextDown } from '../components/utils/FrameMotion';
 import { motion, useAnimation } from 'framer-motion';
 import { useInView } from "react-intersection-observer";
 
-function about() {
+function About() {
 
   const secPopOut = {
     hidden: {
@@ -221,7 +221,7 @@ function about() {
         {/* Me, My & I */}
         <MySelf />
         {/* Education */}
-        <Education />
+        <Education />  
         {/* Experience */}
         <Experience />
         {/* Skills */}
@@ -231,4 +231,4 @@ function about() {
   )
 }
 
-export default about;
+export default About;
