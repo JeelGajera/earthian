@@ -18,8 +18,9 @@ const ProjectLayout = ({ project }) => {
 
     const Icons = ({ children, type }) => {
         const config = {
-            primary: 'bg-teal-400 text-red-500 ',
+            primary: 'bg-teal-400 text-red-500',
             secondary: 'bg-red-500 text-teal-400',
+            yellow: 'text-[#f8b34b] bg-red-500',
         }
 
         return (
@@ -38,6 +39,88 @@ const ProjectLayout = ({ project }) => {
                     {title}
                 </h2>
             </TextDown>
+        );
+    };
+
+    const ProjectUI = () => {
+        return (
+            <>
+                <div className="m-1 flex items-center justify-center md:flex-none">
+                    <ImgFadeOut>
+                        <Image src={project?.projectUi} height="300" width="450" />
+                    </ImgFadeOut>
+                </div>
+            </>
+        );
+    };
+
+    const Description = () => {
+        return (
+            <>
+                <div className="flex text-xl items-center">
+                    <Icons type="secondary"><MdOutlineDescription /></Icons><DataTitle title="Description :" />
+                </div>
+                <div className="ml-10">
+                    <artical className="pl-10 text-gray-300 text-md">
+                        {project?.description}
+                    </artical>
+                </div>
+            </>
+        );
+    };
+
+    const Date = () => {
+        return (
+            <>
+                <div className="flex items-center text-md">
+                    <Icons type="yellow"><MdDateRange /></Icons>
+                    Date :
+                    <p className="pl-1 text-gray-300">{project?.date}</p>
+                </div>
+            </>
+        );
+    };
+
+    const GitHub = () => {
+        return (
+            <>
+                <div className="flex items-center text-md">
+                    <Icons type="yellow"><FiGithub /></Icons>
+                    GitHub&nbsp;:
+                    <Link href={project?.github} passHref >
+                        <a target="_blank" rel="noopener noreferrer" className="pl-1 text-gray-300 cursor-pointer">{"github.com/JeelGajera/" + project?.slug}</a>
+                    </Link>
+                </div>
+            </>
+        );
+    };
+    const Live = () => {
+        return (
+            <>
+                <div className="flex items-center text-md">
+                    <Icons type="yellow"><GiCampfire className="animate-pulse" /></Icons>
+                    Live&nbsp;:
+                    <Link href={project?.live} passHref >
+                        <a target="_blank" rel="noopener noreferrer" className="pl-1 text-gray-300 cursor-pointer">{project?.live}</a>
+                    </Link>
+                </div>
+            </>
+        );
+    };
+
+    const Tools = () => {
+        return (
+            <>
+                <div className="flex items-center text-md">
+                    <Icons type="yellow"><FaTools /></Icons>
+                    Tools&nbsp;:
+                    <div className="pl-1 text-gray-300">
+                        {project?.tools.map((i) => {
+                            return <span className="m-1 px-2 py-1 rounded-full inline-block bg-gray-700">{i}</span>
+                        })}
+                    </div>
+                </div>
+            </>
         );
     };
 
@@ -65,53 +148,20 @@ const ProjectLayout = ({ project }) => {
                         </h1>
                     </LeftToRight>
                     <div className="flex gap-4 flex-col md:flex-row">
-                        <div className="m-1 flex items-center justify-center md:flex-none">
-                            <ImgFadeOut>
-                                <Image src={project?.projectUi} height="300" width="450" />
-                            </ImgFadeOut>
-                        </div>
+                        {project?.projectUi && <ProjectUI />}
                         <div className="m-1 flex-col">
                             <div>
-                                <div className="flex text-xl items-center">
-                                    <Icons type="secondary"><MdOutlineDescription /></Icons><DataTitle title="Description :" />
-                                </div>
-                                <artical className="pl-4 text-gray-300 text-sm">
-                                    {project?.description}
-                                </artical>
+                                {project?.description && <Description />}
                             </div>
                             <div>
                                 <div className="flex text-xl items-center">
                                     <Icons type="secondary"><TbListDetails /></Icons><DataTitle title="Info :" />
                                 </div>
                                 <div>
-                                    <div className="flex items-center text-sm">
-                                        <Icons type="primary"><MdDateRange /></Icons>
-                                        Date :
-                                        <p className="pl-1 text-gray-300">{project?.date}</p>
-                                    </div>
-                                    <div className="flex items-center text-sm">
-                                        <Icons type="primary"><FiGithub /></Icons>
-                                        GitHub Repo :
-                                        <Link href={project?.github} passHref >
-                                            <a target="_blank" rel="noopener noreferrer" className="pl-1 text-gray-300 cursor-pointer">{"github.com/JeelGajera/" + project?.slug}</a>
-                                        </Link>
-                                    </div>
-                                    <div className="flex items-center text-sm">
-                                        <Icons type="primary"><GiCampfire className="animate-pulse" /></Icons>
-                                        Live :
-                                        <Link href={project?.live} passHref >
-                                            <a target="_blank" rel="noopener noreferrer" className="pl-1 text-gray-300 cursor-pointer">{project?.live}</a>
-                                        </Link>
-                                    </div>
-                                    <div className="flex items-center text-sm">
-                                        <Icons type="primary"><FaTools /></Icons>
-                                        Tools&nbsp;:
-                                        <div className="pl-1 text-gray-300">
-                                            {project?.tools.map((i) => {
-                                                return <span className="m-1 px-2 py-1 rounded-full inline-block bg-gray-700">{i}</span>
-                                            })}
-                                        </div>
-                                    </div>
+                                    {project?.date && <Date />}
+                                    {project?.github && <GitHub />}
+                                    {project?.live && <Live />}
+                                    {project?.tools && <Tools />}
                                 </div>
                             </div>
                         </div>

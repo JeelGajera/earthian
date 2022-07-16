@@ -12,6 +12,5 @@ module.exports = [
         projectUi: Thumb2,
         github: 'https://github.com/JeelGajera/Twitter-Clone',
         live: 'https://twitter-clone-b6e4f.web.app/',
-        fram: ['ref1','ctr1', 'inView1'],
     },
 ];
