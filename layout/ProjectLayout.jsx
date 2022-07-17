@@ -12,7 +12,8 @@ import { TbListDetails } from 'react-icons/tb';
 import { FiGithub } from 'react-icons/fi';
 import { FaTools } from 'react-icons/fa';
 import { GiCampfire } from 'react-icons/gi';
-import { LeftToRight, ImgFadeOut, IconFadeOutHover, TextDown } from '../components/utils/FrameMotion';
+import { ImQuotesLeft, ImQuotesRight } from 'react-icons/im';
+import { LeftToRight, RighToLeft, ImgFadeOut, IconFadeOutHover, FadeOut, TextDown } from '../components/utils/FrameMotion';
 
 const ProjectLayout = ({ project }) => {
 
@@ -34,11 +35,11 @@ const ProjectLayout = ({ project }) => {
 
     const DataTitle = ({ title }) => {
         return (
-            <TextDown>
+            <FadeOut>
                 <h2 className="mb-2 text-red-500 decoration-teal-400 underline underline-offset-4">
                     {title}
                 </h2>
-            </TextDown>
+            </FadeOut>
         );
     };
 
@@ -47,7 +48,7 @@ const ProjectLayout = ({ project }) => {
             <>
                 <div className="m-1 flex items-center justify-center md:flex-none">
                     <ImgFadeOut>
-                        <Image src={project?.projectUi} height="300" width="450" />
+                        <Image src={project?.projectUi} height="300" width="450" className="rounded-lg" />
                     </ImgFadeOut>
                 </div>
             </>
@@ -60,11 +61,13 @@ const ProjectLayout = ({ project }) => {
                 <div className="flex text-xl items-center">
                     <Icons type="secondary"><MdOutlineDescription /></Icons><DataTitle title="Description :" />
                 </div>
-                <div className="ml-10">
-                    <artical className="pl-10 text-gray-300 text-md">
-                        {project?.description}
-                    </artical>
-                </div>
+                <TextDown>
+                    <div className="ml-10">
+                        <artical className="pl-10 text-gray-300 text-md">
+                            {project?.description}
+                        </artical>
+                    </div>
+                </TextDown>
             </>
         );
     };
@@ -75,7 +78,7 @@ const ProjectLayout = ({ project }) => {
                 <div className="flex items-center text-md">
                     <Icons type="yellow"><MdDateRange /></Icons>
                     Date :
-                    <p className="pl-1 text-gray-300">{project?.date}</p>
+                    <p className="pl-1 text-gray-300 text-sm">{project?.date}</p>
                 </div>
             </>
         );
@@ -87,9 +90,11 @@ const ProjectLayout = ({ project }) => {
                 <div className="flex items-center text-md">
                     <Icons type="yellow"><FiGithub /></Icons>
                     GitHub&nbsp;:
-                    <Link href={project?.github} passHref >
-                        <a target="_blank" rel="noopener noreferrer" className="pl-1 text-gray-300 cursor-pointer">{"github.com/JeelGajera/" + project?.slug}</a>
-                    </Link>
+                    <artical>
+                        <Link href={project?.github} passHref >
+                            <a target="_blank" rel="noopener noreferrer" className="pl-1 text-gray-300 cursor-pointer text-sm">{"github.com/JeelGajera/" + project?.slug}</a>
+                        </Link>
+                    </artical>
                 </div>
             </>
         );
@@ -101,7 +106,7 @@ const ProjectLayout = ({ project }) => {
                     <Icons type="yellow"><GiCampfire className="animate-pulse" /></Icons>
                     Live&nbsp;:
                     <Link href={project?.live} passHref >
-                        <a target="_blank" rel="noopener noreferrer" className="pl-1 text-gray-300 cursor-pointer">{project?.live}</a>
+                        <a target="_blank" rel="noopener noreferrer" className="pl-1 text-gray-300 cursor-pointer text-sm">{project?.live}</a>
                     </Link>
                 </div>
             </>
@@ -116,7 +121,7 @@ const ProjectLayout = ({ project }) => {
                     Tools&nbsp;:
                     <div className="pl-1 text-gray-300">
                         {project?.tools.map((i) => {
-                            return <span className="m-1 px-2 py-1 rounded-full inline-block bg-gray-700">{i}</span>
+                            return <span className="m-1 px-2 py-1 shadow-2xl rounded-full inline-block bg-gray-700 text-sm">{i}</span>
                         })}
                     </div>
                 </div>
@@ -133,12 +138,13 @@ const ProjectLayout = ({ project }) => {
                 <meta content="width=device-width, initial-scale=1.0" name='viewport' />
                 <meta name="theme-color" content="#0F1625" />
                 <meta name="description" content="Hello! 😎 Welcome to my NextJS base Portfolio Site." />
+                <meta content="jeel gajera,devloper,Freelancer,student" name="keywords"></meta>
                 <meta name={project?.title} content={project?.description} />
             </Head>
             <BgObjects />
             <Navbar section={"Portfolio 🪄"} />
             <Frame>
-                <main className="mt-4 p-4 bg-white rounded-lg bg-opacity-10 backdrop-blur-md">
+                <main className="mt-4 p-4 shadow-2xl bg-white rounded-lg bg-opacity-10 backdrop-blur-md">
                     <LeftToRight>
                         <h1 className="mb-4 flex items-center justify-center text-2xl text-[#f8b34b] capitalize">
                             <Icons>
@@ -157,14 +163,20 @@ const ProjectLayout = ({ project }) => {
                                 <div className="flex text-xl items-center">
                                     <Icons type="secondary"><TbListDetails /></Icons><DataTitle title="Info :" />
                                 </div>
-                                <div>
+                                <RighToLeft>
                                     {project?.date && <Date />}
                                     {project?.github && <GitHub />}
                                     {project?.live && <Live />}
                                     {project?.tools && <Tools />}
-                                </div>
+                                </RighToLeft>
                             </div>
                         </div>
+                    </div>
+                    <div className="mt-4 mx-4 font-mono font-medium text-black  flex items-center justify-center">
+                        <i className="">
+                            <ImQuotesLeft className="mb-2 z-10 inline-block relative text-red-500" />&nbsp;You don't have to do perfect things, you have to just try to make it perfect and at the
+                            end it will&nbsp;<ImQuotesRight className="mb-2 z-10 inline-block relative text-red-500" />
+                        </i>
                     </div>
                 </main>
             </Frame>

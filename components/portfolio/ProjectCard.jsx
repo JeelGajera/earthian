@@ -19,9 +19,9 @@ function ProjectCard({ project }) {
                         height={200}
                     />
                 </div>
-                <div className="absolute bottom-0 right-0 p-6">
+                <div className="absolute top-0 left-0 p-5 bg-gradient-to-br from-black to-transparent w-full h-full">
                     <TextDown>
-                        <h2 className="font-bold text-2xl text-red-500 mb-4 capitalize decoration-teal-400 group-hover:underline underline-offset-8">
+                        <h2 className="font-bold text-2xl text-red-500 mb-4 capitalize decoration-[#f8b34b] group-hover:underline underline-offset-8">
                             {title}
                         </h2>
                     </TextDown>
