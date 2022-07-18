@@ -1,11 +1,11 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect } from 'react';
 import Layout from '../../layout/Layout';
-import ProjectCard from '../../components/portfolio/ProjectCard';
-import Project from '../../SiteData/Projects';
+import Domains from '../../SiteData/ProjectData/Domain.js';
+import ProjectDomainCard from '../../components/portfolio/ProjectDomainCard';
 import { motion, useAnimation } from 'framer-motion';
 import { useInView } from "react-intersection-observer";
 
-function Projects() {
+function DomainPage() {
 
   const secPopOut = {
     hidden: {
@@ -20,25 +20,35 @@ function Projects() {
     }
   };
 
-  const control = useAnimation();
-  const [ref, inView] = useInView();
-  useEffect(() => {
-    if (inView) {
-      control.start("visible");
-    } if (!inView) {
-      control.start("hidden");
-    }
-  }, [control, inView]);
+  const Divd = ({ children, key }) => {
+    const control = useAnimation();
+    const [ref, inView] = useInView({
+      threshold: 0.2,
+    });
+    useEffect(() => {
+      if (inView) {
+        control.start("visible");
+      } if (!inView) {
+        control.start("hidden");
+      }
+    }, [control, inView]);
+
+    return (
+      <motion.div
+        ref={ref} initial="hidden" animate={control} variants={secPopOut}
+        key={key} className="col-span-6 lg:col-span-2">
+        {children}
+      </motion.div>
+    );
+  };
 
   return (
     <Layout section="Portfolio" title="Jeel Gajera | Portfolio 😎">
-      <div className="mt-4 grid grid-cols-6 gap-4">
-        {Project.map((item) => (
-          <motion.div
-            ref={ref} initial="hidden" animate={control} variants={secPopOut}
-            key={item.slug} className="col-span-6 lg:col-span-2">
-            <ProjectCard href={`/portfolio/${encodeURIComponent(item.slug)}`} project={item} />
-          </motion.div>
+      <div className="mt-4 grid grid-cols-4 gap-4">
+        {Domains.map((item) => (
+          <Divd key={item.slug}>
+            <ProjectDomainCard link={`/portfolio/${encodeURIComponent(item.slug)}`} project={item} />
+          </Divd>
         )
         )}
       </div>
@@ -46,4 +56,4 @@ function Projects() {
   )
 }
 
-export default Projects;
+export default DomainPage;

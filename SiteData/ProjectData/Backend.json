@@ -1,0 +1,57 @@
+[
+    {
+        "title": "Timestamp Microservice",
+        "slug": "timestamp-microservice",
+        "description": "In this project, I built a microservice that returns a timestamp in milliseconds. The service is written in Node.js and uses the Express framework. The service is deployed on Replit.",
+        "tools": ["Html/Css/Js", "Nodejs", "Express", "MongoDB", "Replit"],
+        "date": "May 17, 2022",
+        "thumbnail": "https://res.cloudinary.com/earthian/image/upload/v1658160693/backend/thumbnail/timestamp-micos_pzfijk.svg",
+        "projectUi": "https://res.cloudinary.com/earthian/image/upload/v1658160662/backend/projectUI/timestamp-micros_hphve9.png",
+        "github": "https://github.com/JeelGajera/boilerplate-project-timestamp",
+        "live": "https://boilerplate-project-timestamp.jeelgajera1.repl.co/"
+    },
+    {
+        "title": "Request Header Parser Microservice",
+        "slug": "headerparser-microservice",
+        "description": "In this project, I built a microservice that returns a JSON object with the request header information. The service is written in Node.js and uses the Express framework. The service is deployed on Replit.",
+        "tools": ["Html/Css/Js", "Nodejs", "Express", "MongoDB", "Replit"],
+        "date": "May 17, 2022",
+        "thumbnail": "https://res.cloudinary.com/earthian/image/upload/v1658160693/backend/thumbnail/headerparser-micros_z93uby.svg",
+        "projectUi": "https://res.cloudinary.com/earthian/image/upload/v1658160662/backend/projectUI/headerparser-micros_dkltoq.png",
+        "github": "https://github.com/JeelGajera/boilerplate-project-headerparser",
+        "live": "https://boilerplate-project-headerparser.jeelgajera1.repl.co/"
+    },
+    {
+        "title": "URL Shortener Microservice",
+        "slug": "urlshortener-microservice",
+        "description": "In this project, I built a microservice that returns a shortened URL. The service is written in Node.js and uses the Express framework. The service is deployed on Replit.",
+        "tools": ["Html/Css/Js", "Nodejs", "Express", "MongoDB", "Replit"],
+        "date": "May 17, 2022",
+        "thumbnail": "https://res.cloudinary.com/earthian/image/upload/v1658160693/backend/thumbnail/urlshortener-micros_u92jt3.svg",
+        "projectUi": "https://res.cloudinary.com/earthian/image/upload/v1658160662/backend/projectUI/urlshorterner-micros_kafmt6.png",
+        "github": "https://github.com/JeelGajera/boilerplate-project-urlshortener",
+        "live": "https://boilerplate-project-urlshortener.jeelgajera1.repl.co/"
+    },
+    {
+        "title": "Exercise Tracker",
+        "slug": "exercise-tracker",
+        "description": "In this project, I built a microservice that returns a JSON object with user exercise detail logs. The service is written in Node.js and uses the Express framework. The service is deployed on Replit.",
+        "tools": ["Html/Css/Js", "Nodejs", "Express", "MongoDB", "Replit"],
+        "date": "May 20, 2022",
+        "thumbnail": "https://res.cloudinary.com/earthian/image/upload/v1658160693/backend/thumbnail/exercise-tracker_vht7dh.svg",
+        "projectUi": "https://res.cloudinary.com/earthian/image/upload/v1658160662/backend/projectUI/exercise-tracker_jjjxki.png",
+        "github": "https://github.com/JeelGajera/boilerplate-project-exercisetracker",
+        "live": "https://boilerplate-project-exercisetracker.jeelgajera1.repl.co/"
+    },
+    {
+        "title": "File Metadata Microservice",
+        "slug": "filemetadata-microservice",
+        "description": "In this project, I built a microservice that returns a JSON object with the file metadata(size,type,name). The service is written in Node.js and uses the Express framework. The service is deployed on Replit.",
+        "tools": ["Html/Css/Js", "Nodejs", "Express", "MongoDB", "Replit"],
+        "date": "May 19, 2022",
+        "thumbnail": "https://res.cloudinary.com/earthian/image/upload/v1658160693/backend/thumbnail/file-metadata_juwn1w.svg",
+        "projectUi": "https://res.cloudinary.com/earthian/image/upload/v1658160662/backend/projectUI/file-metadata_xoit9w.png",
+        "github": "https://github.com/JeelGajera/boilerplate-project-filemetadata",
+        "live": "https://boilerplate-project-filemetadata.jeelgajera1.repl.co/"
+    }
+]

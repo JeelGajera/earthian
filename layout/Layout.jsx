@@ -20,6 +20,9 @@ const Layout = ({ children, title, description, section }) => {
       <BgObjects/>
       <Navbar section={section} />
       <Frame>{children}</Frame>
+      <div className="flex justify-center text-gray-600">
+        &copy;2022 All rights reserved | Jeel Gajera 
+      </div>
       <Footer/>
     </>
   );

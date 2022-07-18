@@ -160,7 +160,7 @@ function Contact() {
     const sendEmail = (e) => {
       e.preventDefault();
 
-      emailjs.sendForm('service_ekvenj9', 'template_luj4ace', form.current, 'pm_CA6QtjyNSkb7xE')
+      emailjs.sendForm('service_7hchtkb', 'template_luj4ace', form.current, 'pm_CA6QtjyNSkb7xE')
         .then((result) => {
           console.log(result.text);
           document.getElementById("statusText").innerHTML = ("Thank You 😊! for contacting me.");
@@ -188,13 +188,13 @@ function Contact() {
       <DarkDiv refn={ref4} ctr={control4}>
         <form ref={form} onSubmit={sendEmail}>
           <div
-            className="max-w-screen-xl px-8 grid gap-8 grid-cols-1 md:grid-cols-2 md:px-12 lg:px-16 xl:px-32 py-16 mx-auto text-[#f8b34b] rounded-lg shadow-lg">
+            className="max-w-screen-xl px-8 grid gap-2 grid-cols-1 md:grid-cols-2 py-4 mx-auto text-[#f8b34b] rounded-lg shadow-lg">
             <div className="flex flex-col justify-between">
-              <div className="m-1 text-center animate-pulseSlow">
-                <Image width="250" height="250" src="/contactForm.svg" alt="form-img" />
+              <div className="text-center animate-pulseSlow">
+                <Image width="500" height="300" src="/contactForm.svg" alt="form-img" />
               </div>
               <FadeOut>
-                <h2 id="statusText" className="text-4xl lg:text-5xl font-bold leading-tight">Lets talk about everything!</h2>
+                <h2 id="statusText" className="md:z-10 md:p-12 lg:px-16 text-4xl lg:text-5xl font-bold leading-tight">Lets talk about everything!</h2>
               </FadeOut>
             </div>
             <div className="">

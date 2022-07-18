@@ -1,0 +1,102 @@
+[
+    {
+        "title": "Resume Builder",
+        "slug": "resume-builder",
+        "description": "A resume builder that allows users to create a resume in minutes. User have to fill ditails and get resume with custom color style in Pdf.",
+        "tools": ["React", "react-print", "CSS", "Font-Awesome", "Vercel"],
+        "date": "Aprile 28, 2022",
+        "thumbnail": "https://res.cloudinary.com/earthian/image/upload/v1658160410/frontend/thumbnail/resume-builder_x6z3yv.svg",
+        "projectUi": "https://res.cloudinary.com/earthian/image/upload/v1658160492/frontend/projectUI/resume-builder_v17bxw.png",
+        "github": "https://github.com/JeelGajera/resume-builder",
+        "live": "https://resume-builder-32.vercel.app/"
+    },
+    {
+        "title": "Twitter Clone",
+        "slug": "twitter-clone",
+        "description": "In this Twitter Clone project. This web-app also allows user to add tweets with image by provided image link and post text.",
+        "tools": ["React", "Redux", "Material UI", "Firebase", "Twitter API"],
+        "date": "Febuary 6, 2022",
+        "thumbnail": "https://res.cloudinary.com/earthian/image/upload/v1658160411/frontend/thumbnail/twitter-clone_h4clqs.svg",
+        "projectUi": "https://res.cloudinary.com/earthian/image/upload/v1658160493/frontend/projectUI/twitter_clone_j3zeog.png",
+        "github": "https://github.com/JeelGajera/Twitter-Clone",
+        "live": "https://twitter-clone-b6e4f.web.app/"
+    },
+    {
+        "title": "Todo App",
+        "slug": "todo-app",
+        "description": "In this React based Todo App project. This web-app allows user to add, delete, edit and mark as completed tasks. Try to add similar task!",
+        "tools": ["React","CSS", "GitHub-Pages"],
+        "date": "Octomber 17, 2021",
+        "thumbnail": "https://res.cloudinary.com/earthian/image/upload/v1658160410/frontend/thumbnail/todo-app_tlwvi9.svg",
+        "projectUi": "https://res.cloudinary.com/earthian/image/upload/v1658160492/frontend/projectUI/todo-app_aii7gd.png",
+        "github": "https://github.com/JeelGajera/React_Todo-app",
+        "live": "https://jeelgajera.github.io/React_Todo-app/"
+    },
+    {
+        "title": "Promodoro Clock",
+        "slug": "promodoro-clock",
+        "description": "In this Promodoro Clock project. This web-app allows user to start, pause, and reset Promodoro Clock, helps user to quality time-management.",
+        "tools": ["React", "CSS", "Codepen"],
+        "date": "December 30, 2021",
+        "thumbnail": "https://res.cloudinary.com/earthian/image/upload/v1658160408/frontend/thumbnail/promodoro-clock_u6efou.svg",
+        "codepen": ["LYzQdOQ", "Promodoro Clock (25 + 5 clock)"]
+    },
+    {
+        "title": "React Drum Machine",
+        "slug": "drum-machine",
+        "description": "In this React Drum Machine project. This web-app allows user to play drum machine with different sounds :)",
+        "tools": ["React", "CSS", "freecodecamp", "codepen"],
+        "date": "December 29, 2021",
+        "thumbnail": "https://res.cloudinary.com/earthian/image/upload/v1658160441/frontend/thumbnail/drum-machine_qyl5xu.svg",
+        "codepen": ["LYzQEmw", "React Drum Machine"]
+    },
+    {
+        "title": "React Calculator",
+        "slug": "react-calculator",
+        "description": "In this React Calculator project. This web-app allows user to calculate basic mathematical operations with classic UI.",
+        "tools": ["React", "CSS", "codepen"],
+        "date": "December 29, 2021",
+        "thumbnail": "https://res.cloudinary.com/earthian/image/upload/v1658160408/frontend/thumbnail/calculator_v01lsd.svg",
+        "codepen": ["LYzQREX", "JavaScript Calculator"]
+    },
+    {
+        "title": "MarkDown Previewer",
+        "slug": "markdown-previewer",
+        "description": "In this MarkDown Previewer project. This web-app allows user to preview markdown text in html format.",
+        "tools": ["React", "jQuery", "CSS", "MarkDown", "codepen"],
+        "date": "December 28, 2021",
+        "thumbnail": "https://res.cloudinary.com/earthian/image/upload/v1658160408/frontend/thumbnail/markdown_auonnx.svg",
+        "codepen": ["PoJEypQ", "MarkDown Previewer"]
+    },
+    {
+        "title": "Random Quote Generator",
+        "slug": "random-quote-generator",
+        "description": "In this Random Quote Generator project. This web-app allows user to generate random quote with different categories.",
+        "tools": ["HTML", "SCSS", "jQuery", "codepen"],
+        "date": "December 28, 2021",
+        "thumbnail": "https://res.cloudinary.com/earthian/image/upload/v1658160411/frontend/thumbnail/quote_vg1gub.svg",
+        "codepen": ["xxXprzz", "Random Quote Generator"]
+    },
+    {
+        "title": "Color Flipper",
+        "slug": "color-flipper",
+        "description": "In this Color Flipper project. This web-app allows user to change color of the background of the page. Try to change color of the background of the page!",
+        "tools": ["HTML", "CSS", "JavaScript"],
+        "date": "Octomber 7, 2021",
+        "thumbnail": "https://res.cloudinary.com/earthian/image/upload/v1658160408/frontend/thumbnail/color-flipper_ep8u3q.svg",
+        "projectUi": "https://res.cloudinary.com/earthian/image/upload/v1658160490/frontend/projectUI/color-flipper_nbka6w.png",
+        "github": "https://github.com/JeelGajera/JavaScript_Projects/tree/main/P1_Color%20Flipper",
+        "live": "https://jeelgajera.github.io/JavaScript_Projects/P1_Color%20Flipper/hex.html"
+    },
+    {
+        "title": "Counter",
+        "slug": "counter",
+        "description": "In this Counter project. This web-app allows user to increase, decrease, and reset Counter",
+        "tools": ["HTML", "CSS", "JavaScript"],
+        "date": "Octomber 7, 2021",
+        "thumbnail": "https://res.cloudinary.com/earthian/image/upload/v1658160408/frontend/thumbnail/counter_fswmvy.svg",
+        "projectUi": "https://res.cloudinary.com/earthian/image/upload/v1658160490/frontend/projectUI/counter_iiojdg.png",
+        "github": "https://github.com/JeelGajera/JavaScript_Projects/tree/main/P2_Counter",
+        "live": "https://jeelgajera.github.io/JavaScript_Projects/P2_Counter/index.html"
+    }
+]

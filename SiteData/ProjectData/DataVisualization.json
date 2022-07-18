@@ -1,0 +1,47 @@
+[
+    {
+        "title": "TreeMap Diagram",
+        "slug": "treemap-diagram",
+        "description": "In this TreeMap Diagram project user can view json data in tree-map format",
+        "tools": ["React", "CSS", "D3js", "jQuery", "APIs"],
+        "date": "March 5, 2022",
+        "thumbnail": "https://res.cloudinary.com/earthian/image/upload/v1658160592/dataVisualization/thumbnail/treemap_i70xnd.svg",
+        "codepen" : ["KKyEMBy", "D3: TreeMap Diagram"]
+    },
+    {
+        "title": "Choropleth Map",
+        "slug": "choropleth-map",
+        "description": "In this Choropleth Map project user can view json data in choropleth map format",
+        "tools": ["React","CSS", "D3js", "jQuery","APIs"],
+        "date": "Febuary 3, 2022",
+        "thumbnail": "https://res.cloudinary.com/earthian/image/upload/v1658160594/dataVisualization/thumbnail/choropleth-map_dnc8yc.svg",
+        "codepen": ["VwrjbOw", "D3: Choropleth Map"]
+    },
+    {
+        "title": "Heat Map",
+        "slug": "heat-map",
+        "description": "In this Heat Map project user can view json data in heat map format",
+        "tools": ["React", "CSS", "D3js", "jQuery", "APIs"],
+        "date": "January 30, 2022",
+        "thumbnail": "https://res.cloudinary.com/earthian/image/upload/v1658160593/dataVisualization/thumbnail/heatmap_bi3sdn.svg",
+        "codepen": ["zYPvQqy", "D3: Heat Map"]
+    },
+    {
+        "title": "Scatterplot Graph",
+        "slug": "scatterplot-graph",
+        "description": "In this Scatterplot Graph project user can view json data in scatterplot graph format",
+        "tools": ["React", "CSS", "D3js", "jQuery", "APIs"],
+        "date": "January 28, 2022",
+        "thumbnail": "https://res.cloudinary.com/earthian/image/upload/v1658160593/dataVisualization/thumbnail/scatterplot-graph_vwim9k.svg",
+        "codepen": ["gOXpzwb", "D3: Scatterplot Graph"]
+    },
+    {
+        "title": "Bar Chart",
+        "slug": "bar-chart",
+        "description": "In this Bar Chart project user can view json data in bar chart format",
+        "tools": ["React", "CSS", "D3js", "jQuery", "APIs"],
+        "date": "January 26, 2022",
+        "thumbnail": "https://res.cloudinary.com/earthian/image/upload/v1658160593/dataVisualization/thumbnail/bar-chart_qqqz65.svg",
+        "codepen": ["WNXNWLK", "D3: Bar Chart"]
+    }
+]

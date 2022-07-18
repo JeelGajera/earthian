@@ -55,6 +55,15 @@ const ProjectLayout = ({ project }) => {
         );
     };
 
+    const CodePen = () => {
+        return (
+            <div className="m-1 flex items-center justify-center md:flex-none">
+                <iframe width="500" height="450" scrolling="no" title={project?.codepen[1]} src={`https://codepen.io/enisoter_jg/embed/${project?.codepen[0]}?default-tab=result&theme-id=dark`} frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+                </iframe>
+            </div>
+        );
+    };
+
     const Description = () => {
         return (
             <>
@@ -155,6 +164,7 @@ const ProjectLayout = ({ project }) => {
                     </LeftToRight>
                     <div className="flex gap-4 flex-col md:flex-row">
                         {project?.projectUi && <ProjectUI />}
+                        {project?.codepen && <CodePen />}
                         <div className="m-1 flex-col">
                             <div>
                                 {project?.description && <Description />}
