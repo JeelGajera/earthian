@@ -69,8 +69,8 @@ function About() {
           className="ml-4 p-2 shadow-2xl bg-black bg-opacity-20 backdrop-blur-md rounded">
           <h3 className="text-[#f8b34b]">Hello! I'm Jeel</h3>
           <ul className="ml-4 text-md list-disc marker:text-[#f8b34b]">
-            <li>I like to communicate with others because it give me chance to interact with others and also i learn something new with people, so it's help me improve my self.</li>
-            <li>Enthusiastically explore new technologies for efficiency, always looking for ways to solve the problem as efficiently as possible</li>
+            <li>I like to communicate with others because it gives me chance to interact with others and also I learn something new with people, so it's helping me improve myself.</li>
+            <li>Enthusiastically explore new technologies for efficiency, always looking for ways to solve the problem as efficiently as possible.</li>
           </ul>
         </motion.div>
       </div>
@@ -100,12 +100,12 @@ function About() {
           <ul className="ml-4 text-md list-disc marker:text-[#f8b34b]">
             <li className="list-none p-1">
               <div className="text-[#f8b34b]">
-                Bechelor's Degree
+                Bachelor's Degree
               </div>
               <span className="font-mono rounded text-gray-400 text-md bg-white bg-opacity-10">2020 - Continue</span>
               <ul className="ml-4 text-md list-disc marker:text-[#f8b34b]">
                 <li className="italic">The Gujarat Technological University</li>
-                <li>Currently I'm pursuing bachelor's degree in Computer Engineering from L.D. College Of Engineering, i'm constantly moving forward in this field</li>
+                <li>Currently, I'm pursuing a bachelor's degree in Computer Engineering from L.D. College Of Engineering, I'm constantly moving forward in this field.</li>
               </ul>
             </li>
             <li className="list-none p-1">
@@ -115,7 +115,7 @@ function About() {
               <span className="font-mono rounded text-gray-400 text-md bg-white bg-opacity-10">2018 - 2020</span>
               <ul className="ml-4 text-md list-disc marker:text-[#f8b34b]">
                 <li className="italic">The School Of Science , Rajkot</li>
-                <li>I've completed my Science Subjects study with A1 grade Specially , Maths and Computer subject help me lot to get interest in this Marvelous field.</li>
+                <li>I've completed my Science Subjects study with A1 grade Especially, Maths and Computer subject help me a lot to get interested in this Marvelous field.</li>
               </ul>
             </li>
           </ul>
@@ -145,11 +145,9 @@ function About() {
           initial={"hidden"} animate={control3} variants={secPopOut}
           className="ml-4 p-2 shadow-2xl bg-black bg-opacity-20 backdrop-blur-md rounded">
           <ul className="ml-4 text-md list-disc marker:text-[#f8b34b]">
-            <li>
-              I'm a student at L.D. College Of Engineering and pursuing computer engineering course, I have a good knowdlage of this field also I'm good in mathematics & management.
-            </li>
-            <li>Currently i'm in 3<sup>rd</sup> year of graduation, i just started exploring into this field but i have a little bit experience of competitive programming.</li>
-            <li>Nowdays, i recently completed FullStack web devlopment, now i'm learning python & java and other programming languages.</li>
+            <li>I'm a student at L.D. College Of Engineering and pursuing computer engineering course, I have a good knowledge of this field also I'm good in mathematics & management.</li>
+            <li>Currently, I'm in the 3<sup>rd</sup> year of graduation. I just started exploring this field but, I have a little bit experience of in competitive programming.</li>
+            <li>Nowadays, I recently completed FullStack web development, and now I'm learning python & java, and other programming languages.</li>
           </ul>
         </motion.div>
       </div>
@@ -178,7 +176,7 @@ function About() {
           className="ml-4 p-2 shadow-2xl bg-black bg-opacity-20 backdrop-blur-md rounded">
           <ul className="ml-4 text-md list-none">
             <li>
-              <span className="text-[#f8b34b] mb-2">Programing Languages</span>
+              <span className="text-[#f8b34b] mb-2">Programming Languages</span>
               <div className="flex m-1">
                 <SkillImg link="/skills/prolan/clan.svg" name="C" />
                 <SkillImg link="/skills/prolan/cpp.svg" name="C++" />
@@ -201,7 +199,7 @@ function About() {
               </div>
             </li>
             <li>
-              <span className="text-[#f8b34b] mb-2">Devlopment</span>
+              <span className="text-[#f8b34b] mb-2">Development</span>
               <div className="flex m-1">
                 <SkillImg link="/skills/dev/git.svg" name="Git" />
                 <SkillImg link="/skills/dev/github.svg" name="Github" />
@@ -221,7 +219,7 @@ function About() {
         {/* Me, My & I */}
         <MySelf />
         {/* Education */}
-        <Education />  
+        <Education />
         {/* Experience */}
         <Experience />
         {/* Skills */}
