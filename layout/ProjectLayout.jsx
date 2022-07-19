@@ -115,7 +115,7 @@ const ProjectLayout = ({ project }) => {
                     <Icons type="yellow"><GiCampfire className="animate-pulse" /></Icons>
                     Live&nbsp;:
                     <Link href={project?.live} passHref >
-                        <a target="_blank" rel="noopener noreferrer" className="pl-1 text-gray-300 cursor-pointer text-sm">{project?.live}</a>
+                        <a target="_blank" rel="noopener noreferrer" className="flex pl-1 text-gray-300 cursor-pointer text-sm">{project?.live}</a>
                     </Link>
                 </div>
             </>
@@ -190,6 +190,9 @@ const ProjectLayout = ({ project }) => {
                     </div>
                 </main>
             </Frame>
+            <div className="flex justify-center text-gray-600">
+                &copy;2022 All rights reserved | Jeel Gajera
+            </div>
             <Footer />
         </>
     );
