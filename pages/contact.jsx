@@ -9,8 +9,8 @@ import { MdEmail } from 'react-icons/md';
 import { ImLocation2 } from 'react-icons/im';
 import { FiGithub } from 'react-icons/fi';
 import { GrTwitter } from 'react-icons/gr';
-import { RiInstagramFill, RiSendPlaneFill } from 'react-icons/ri';
-import { FaFacebookF, FaLinkedinIn } from 'react-icons/fa';
+import { RiSendPlaneFill } from 'react-icons/ri';
+import { FaLinkedinIn } from 'react-icons/fa';
 import { motion, useAnimation } from 'framer-motion';
 import { useInView } from "react-intersection-observer";
 
@@ -119,10 +119,8 @@ function Contact() {
       <DarkDiv refn={ref2} ctr={control2}>
         <ul className="m-3 p-2 gap-3 text-3xl flex items-center justify-center">
           <SocialBtn to="https://github.com/JeelGajera"><FiGithub /></SocialBtn>
-          <SocialBtn to="https://twitter.com/enisoter_jg"><GrTwitter /></SocialBtn>
+          <SocialBtn to="https://twitter.com/_jeelgajera"><GrTwitter /></SocialBtn>
           <SocialBtn to="https://www.linkedin.com/in/jeel-gajera-063970215"><FaLinkedinIn /></SocialBtn>
-          <SocialBtn to="https://www.instagram.com/enisoter_jg"><RiInstagramFill /></SocialBtn>
-          <SocialBtn to="https://www.facebook.com/enisoter_jg"><FaFacebookF /></SocialBtn>
         </ul>
       </DarkDiv>
     );
@@ -160,7 +158,7 @@ function Contact() {
     const sendEmail = (e) => {
       e.preventDefault();
 
-      emailjs.sendForm('service_7hchtkb', 'template_luj4ace', form.current, 'pm_CA6QtjyNSkb7xE')
+      emailjs.sendForm('service_rftyq0t', 'template_luj4ace', form.current, 'nYvFyb6DzPX05DTeI')
         .then((result) => {
           console.log(result.text);
           document.getElementById("statusText").innerHTML = ("Thank You 😊! for contacting me.");

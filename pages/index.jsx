@@ -6,8 +6,7 @@ import { LinkButton } from '../components/utils/Button';
 import { BsArrowRight } from 'react-icons/bs';
 import { FiGithub } from 'react-icons/fi';
 import { GrTwitter } from 'react-icons/gr';
-import { RiInstagramFill } from 'react-icons/ri';
-import { FaFacebookF, FaLinkedinIn } from 'react-icons/fa';
+import { FaLinkedinIn } from 'react-icons/fa';
 
 export default function Home() {
 
@@ -37,10 +36,8 @@ export default function Home() {
           <DownToUp>
             <ul className="mt-3 p-2 gap-3 text-3xl flex items-center justify-center">
               <SocialBtn to="https://github.com/JeelGajera"><FiGithub /></SocialBtn>
-              <SocialBtn to="https://twitter.com/enisoter_jg"><GrTwitter /></SocialBtn>
+              <SocialBtn to="https://twitter.com/_jeelgajera"><GrTwitter /></SocialBtn>
               <SocialBtn to="https://www.linkedin.com/in/jeel-gajera-063970215"><FaLinkedinIn /></SocialBtn>
-              <SocialBtn to="https://www.instagram.com/enisoter_jg"><RiInstagramFill /></SocialBtn>
-              <SocialBtn to="https://www.facebook.com/enisoter_jg"><FaFacebookF /></SocialBtn>
             </ul>
           </DownToUp>
         </div>
