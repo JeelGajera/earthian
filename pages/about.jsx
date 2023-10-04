@@ -146,7 +146,7 @@ function About() {
           className="ml-4 p-2 shadow-2xl bg-black bg-opacity-20 backdrop-blur-md rounded">
           <ul className="ml-4 text-md list-disc marker:text-[#f8b34b]">
             <li>I'm a student at L.D. College Of Engineering and pursuing computer engineering course, I have a good knowledge of this field also I'm good in mathematics & management.</li>
-            <li>Currently, I'm in the 3<sup>rd</sup> year of graduation. I just started exploring this field but, I have a little bit experience of in competitive programming.</li>
+            <li>Currently, I'm in the 4<sup>rd</sup> year of graduation. I just started exploring this field but, I have a little bit experience of in competitive programming.</li>
             <li>Nowadays, I recently completed FullStack web development, and now I'm learning python & java, and other programming languages.</li>
           </ul>
         </motion.div>

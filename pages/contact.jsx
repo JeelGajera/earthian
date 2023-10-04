@@ -119,7 +119,7 @@ function Contact() {
       <DarkDiv refn={ref2} ctr={control2}>
         <ul className="m-3 p-2 gap-3 text-3xl flex items-center justify-center">
           <SocialBtn to="https://github.com/JeelGajera"><FiGithub /></SocialBtn>
-          <SocialBtn to="https://twitter.com/_jeelgajera"><GrTwitter /></SocialBtn>
+          <SocialBtn to="https://twitter.com/jeelgajera_"><GrTwitter /></SocialBtn>
           <SocialBtn to="https://www.linkedin.com/in/jeel-gajera-063970215"><FaLinkedinIn /></SocialBtn>
         </ul>
       </DarkDiv>
